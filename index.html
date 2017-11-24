@@ -1,1 +1,354 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fond Photos</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+ 
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="text-vertical-center">
+        <h2 class="logo" style="color:rgb(37, 23, 4)">Fond Photos</h2>
+        
+        <br>
+        <a style="margin: 10px" href="#portfolio" class="btn btn-dark btn-lg js-scroll-trigger">See More</a>
+      </div>
+    </header>
+
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <button class="gallery-img-btn" onclick="onShowEngagement()">
+                    <img class="img-portfolio img-fluid" src="img/eng1.jpg">
+                    <div class="text">Engagement</div>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <button class="gallery-img-btn" onclick="onShowWedding()">
+                    <img class="img-portfolio img-fluid" src="img/wed1.jpg">
+                    <div class="text">Wedding</div>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <button class="gallery-img-btn" onclick="onShowFamily()">
+                    <img class="img-portfolio img-fluid" src="img/fam1.jpg">
+                    <div class="text">Family</div>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <button class="gallery-img-btn" onclick="onShowPortrait()">
+                    <img class="img-portfolio img-fluid" src="img/portrait3.jpg">
+                    <div class="text">Portrait</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+            <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Book a Free Session</a>
+          </div>
+            <!-- /.col-lg-10 -->
+        </div>
+          <!-- /.row -->
+      </div>
+        <!-- /.container -->
+      
+
+        <div class="modal fade" id="engagementOverlay" role="dialog">
+          
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <a class="close" class="close" data-dismiss="modal">X</a>
+
+            <div class="engagement">
+              <img src="img/eng1.jpg" style="width:100%">
+            </div>
+            
+            <div class="engagement">
+              <img src="img/eng5.jpg" style="width:100%">
+            </div>
+            
+            <div class="engagement">
+              <img src="img/eng3.jpg" style="width:100%">
+            </div>
+            
+            <div class="engagement">
+              <img src="img/eng2.jpg" style="width:100%">
+            </div>
+
+            <div class="engagement">
+              <img src="img/eng4.jpg" style="width:100%">
+            </div>
+
+            <div class="engagement">
+              <img src="img/eng6.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+          </div>
+          
+        </div>
+        
+      </div>
+
+
+      <div class="modal fade" role="dialog" id="weddingOverlay">
+          
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <a class="close" class="close" data-dismiss="modal">X</a>
+
+            <div class="wedding">
+              <img src="img/wed1.jpg" style="width:100%">
+            </div>
+            
+            <div class="wedding">
+              <img src="img/wed4.jpg" style="width:100%">
+            </div>
+            
+            <div class="wedding">
+              <img src="img/wed3.jpg" style="width:100%">
+            </div>
+            
+            <div class="wedding">
+              <img src="img/wed2.jpg" style="width:100%">
+            </div>
+      
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+          </div>
+        </div>
+        
+      </div>
+
+
+      <div class="modal fade" id="familyOverlay" role="dialog">
+        <div class="modal-dialog">
+          
+          <div class="modal-content">
+            <a class="close" class="close" data-dismiss="modal">X</a>
+    
+            <div class="family">
+              <img src="img/fam1.jpg" style="width:100%">
+            </div>
+            
+            <div class="family">
+              <img src="img/fam2.jpg" style="width:100%">
+            </div>
+                  
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+            </div>
+            <br>
+            
+          </div>
+        </div>
+        
+      </div>
+  
+
+
+      <div class="modal fade" role="dialog" id="portraitOverlay">
+          
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <a class="close" class="close" data-dismiss="modal">X</a>
+    
+            <div class="portrait">
+              <img src="img/portrait3.jpg" style="width:100%">
+            </div>
+            
+            <div class="portrait">
+              <img src="img/portrait2.jpg" style="width:100%">
+            </div>
+            
+            <div class="portrait">
+              <img src="img/portrait1.jpg" style="width:100%">
+            </div>
+            
+            <div class="portrait">
+              <img src="img/portrait4.jpg" style="width:100%">
+            </div>
+      
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+            </div>
+          </div>
+          <br>
+          
+        </div>
+        
+      </div>
+
+    </section>
+
+
+
+    <section id="about" class="about">
+      <div class="row">
+        <div class="col-4">
+            <img src="img/selfie.jpg" style="height:100vh">
+        </div>
+        
+        <div class="col-8 about-container">
+          <div class="row">Hello, there! Thanks for visiting my site. My name is Erin Wilcox and I am the photographer behind FondPhotos.com. I love photography because life goes way too fast and sometimes I just want to press the pause button (or at least as close to a pause button as we can get). For me, photography is about capturing those special little moments with the people you love - creating an image that tells the story of a particular moment in time. Right now I'm a part-time stay-at-home mom and a part-time software developer, but I'd love to get more into my passion - photography. At the moment, I'm taking pictures completely for free to build up my portfolio. I'd love to do 1-2 hour photoshoot for you at no cost. I will provide 20ish edited pictures available for download. The only catch is that I ask that you allow me to use your pictures on this site. I am based out of Lehi, UT and am willing to shoot as far north as Salt Lake City and as far south as Provo. If you're interested in booking a photoshoot please text me at (801) 856-0302.</div>
+          <!--<div class="row"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_3VH0F0JfngoyN8ldGcNmdLoXnd2Ajq1" width="300px" height="300px"></iframe></div>-->
+        </div>
+      </div>    
+          
+      
+      
+          
+        
+      
+    </section>
+
+
+    <!-- Map -->
+    <!--<section id="contact" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+      <br/>
+      <small>
+        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+      </small>
+    </section>-->
+
+    <!-- Footer -->
+    <!--<footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>Start Bootstrap</strong>
+            </h4>
+            <p>3481 Melrose Place
+              <br>Beverly Hills, CA 90210</p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                (123) 456-7890</li>
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:name@example.com">name@example.com</a>
+              </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-dribbble fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Your Website 2017</p>
+          </div>
+        </div>
+      </div>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
+    </footer>-->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+
+
+
+
+
+
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
